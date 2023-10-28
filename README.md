@@ -27,6 +27,7 @@
 
 # Database:
    1.Table: 
+   
      - Employees (No, FirstName, LastName, Birthday, Position, Niveau, Salary, RetirementDate)
      - Parameters (Id, Position, WorkYears)
      - Niveaux (Id, Niveau)
@@ -67,13 +68,9 @@
           UNIQUE INDEX `Position_UNIQUE` (`Position` ASC) VISIBLE);
 
       2.3 Create relationship
-      
-        - ALTER TABLE `fullstackdemo`.`employees`
-  ADD CONSTRAINT FK_Employees_Niveaux FOREIGN KEY(Niveau) REFERENCES  niveaux(Niveau);
-        - ALTER TABLE `fullstackdemo`.`employees`
-  ADD CONSTRAINT FK_Employees_Types FOREIGN KEY(Position) REFERENCES  positions(Position);  
-        - ALTER TABLE `fullstackdemo`.`parameters`
-  ADD CONSTRAINT FK_Parameter_Positions FOREIGN KEY(Position) REFERENCES  positions(Position);
+        - ALTER TABLE `fullstackdemo`.`employees`  ADD CONSTRAINT FK_Employees_Niveaux FOREIGN KEY(Niveau) REFERENCES  niveaux(Niveau);
+        - ALTER TABLE `fullstackdemo`.`employees`  ADD CONSTRAINT FK_Employees_Types FOREIGN KEY(Position) REFERENCES  positions(Position);  
+        - ALTER TABLE `fullstackdemo`.`parameters`  ADD CONSTRAINT FK_Parameter_Positions FOREIGN KEY(Position) REFERENCES  positions(Position);
 
       2.4 Insert values
         - 
