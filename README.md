@@ -31,9 +31,12 @@
      - Parameters (Id, Position, WorkYears)
      - Niveaux (Id, Niveau)
      - Positions (Id, Position)
+     
    2. Script SQL to create database(fullstackdemo), tables and insert values into the tables in MySQL
+      
     2.1 Create database fullstackdemo in MySQL
         - CREATE SCHEMA `fullstackdemo` ;
+        
     2.2 Create the tables 
         - CREATE TABLE `fullstackdemo`.`employees` (
           `No` INT NOT NULL AUTO_INCREMENT,
@@ -64,6 +67,7 @@
           UNIQUE INDEX `Position_UNIQUE` (`Position` ASC) VISIBLE);
 
       2.3 Create relationship
+      
         - ALTER TABLE `fullstackdemo`.`employees`
   ADD CONSTRAINT FK_Employees_Niveaux FOREIGN KEY(Niveau) REFERENCES  niveaux(Niveau);
         - ALTER TABLE `fullstackdemo`.`employees`
