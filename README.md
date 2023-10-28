@@ -1,14 +1,17 @@
 # DemoProjectFullStack
 [En]:This is a simple Full Stack demo project.
+
 [Fr]:Il s'agit d'un simple projet de démonstration Full Stack.
 
 # Objectif:
   [En]: I develop a simple Full Stack demo project for demonstrate how it works frontend and backend separated.
+  
   [Fr]: Je développe un projet de démonstration Full Stack simple pour démontrer comment il fonctionne séparément du frontend et du backend.
 
 # Description
   [En]: This project is for manager the employees of an enterprise. 
         Add, retrieve, modify, delete and retrieve by keyword(CRUD) the employee.
+        
   [Fr]: Ce projet s'adresse aux managers des salariés des entreprises.
         Ajoutez, récupérez, modifiez, supprimez et récupérez par mot-clé (CRUD) le salarié.
 
