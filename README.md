@@ -26,7 +26,7 @@
 # Back end architect   
 
 # Database:
-   1.Table: 
+   1. Table: 
    
      - Employees (No, FirstName, LastName, Birthday, Position, Niveau, Salary, RetirementDate)
      - Parameters (Id, Position, WorkYears)
